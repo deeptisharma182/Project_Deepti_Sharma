@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Home Page</title>
+        <link rel="stylesheet" href="task3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        
+    </head> 
+
+    <body>
+       
+        <header>
+         <nav> 
+        <div class="left">
+            <div class="logo">
+                <img src="Logo.png" alt="Logo">
+            </div>
+                <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">TV Shows</a></li>
+                <li><a href="#">Movies</a></li>
+                <li><a href="#">New & Popular</a></li>
+                <li><a href="#">My List</a></li>
+                <li><a href="#">Browse By Languages</a></li>
+            </ul>
+        </div>
+
+        <div class="right">
+            <div class="search-bar">
+                <input type="text" placeholder="Titles, people, genres">
+            </div>
+            <a href="#">Children</a>
+            
+            <div class="icons">
+                <img src="bellIcon.png" alt="Bell icon">
+                <img src="accountLogo.png" alt="Account Icon">
+            
+
+                <div class="dropdown">
+                   <button class="dropbtn"><i class="fas fa-caret-down"></i></button>
+                    <div class="dropdown-content">
+                        <a href="#">Profile</a>
+                        <a href="#">Settings</a>
+                        <a href="#">Logout</a>
+                    </div>
+                    <!-- <script>
+                        function myFunction(){
+                            document.getElementById("dropdown").classList.toggle("show");
+                        }
+                        window.onclick = function(event) { 
+                            if(!event.taget.matches('.dropbtn')){
+                                var dropdowns = document.getElementsByClassName("dropdown-content");
+                                var i;
+                                for(i=0; i<dropdowns.length; i++){
+                                    var openDropdown = dropdowns[i];
+                                    if(openDropdown.classList.contains('show')){
+                                        openDropdown.classList.remove('show');
+                                    }
+                                }
+                            }
+                        }
+                    </script> -->
+
+                </div>
+            </div>
+        </div>
+
+        </nav>
+        </header>
+
+        <section class="Part2">
+            <div class="Popular">
+                Popular on Netflix
+            </div>
+            <div class="flex1">
+               
+                <div class="card-container">
+                   
+                    <div class="card">
+                        
+                        <img src="./Poster.png">   
+                        <div class="card-content">
+        
+                            <div class="ld-icons">
+                                <div class="play-btn" onclick="playVideo()">
+                                    <i class="fa fa-play-circle"></i>
+                                </div>
+                                <div class="like-btn" onclick="toggleLike()">
+                                    <i class="fas fa-thumbs-up"></i>
+                                </div>
+                                <div class="dislike-btn" onclick="toggleDislike()">
+                                    <i class="fas fa-thumbs-down"></i>
+                                </div>
+                            </div>
+        
+                            <div class="more-info">
+                                <p class="likes">9 likes</p>
+        
+                                <div class="match_duration">
+                                    <p class="match" style="color:rgb(45, 179, 45)">97% match</p>
+                                    <p class="duration">2h 35m</p>
+                                </div>
+        
+                                <p class="genre">Horror  Adventure  Mystery</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./BreakingBad.png">   
+                        <div class="card-content">
+            
+        
+                            <div class="ld-icons">
+                                <div class="play-btn" onclick="playVideo()">
+                                    <i class="fa fa-play-circle"></i>
+                                </div>
+                                <div class="like-btn" onclick="toggleLike()">
+                                    <i class="fas fa-thumbs-up"></i>
+                                </div>
+                                <div class="dislike-btn" onclick="toggleDislike()">
+                                    <i class="fas fa-thumbs-down"></i>
+                                </div>
+                            </div>
+        
+                            <div class="more-info">
+                                <p class="likes">82 likes</p>
+        
+                                <div class="match_duration">
+                                    <p class="match" style="color:rgb(45, 179, 45)">67% match</p>
+                                    <p class="duration">8h 34m</p>
+                                </div>
+        
+                                <p class="genre">Suspense  Adventure  Mystery</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./Barfi.png">   
+                        <div class="card-content">
+            
+        
+                            <div class="ld-icons">
+                                <div class="play-btn" onclick="playVideo()">
+                                    <i class="fa fa-play-circle"></i>
+                                </div>
+                                <div class="like-btn" onclick="toggleLike()">
+                                    <i class="fas fa-thumbs-up"></i>
+                                </div>
+                                <div class="dislike-btn" onclick="toggleDislike()">
+                                    <i class="fas fa-thumbs-down"></i>
+                                </div>
+                            </div>
+        
+                            <div class="more-info">
+                                <p class="likes">84 likes</p>
+        
+                                <div class="match_duration">
+                                    <p class="match" style="color:rgb(45, 179, 45)">97% match</p>
+                                    <p class="duration">2h 39m</p>
+                                </div>
+        
+                                <p class="genre">Comedy Adventure Melodrama</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+            </div> 
+        
+            <div class="Popular">
+                Trending Now
+            </div>
+            <div class="flex2">
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./Poster5.png">   
+                        <div class="card-content">
+            
+        
+                            <div class="ld-icons">
+                                <div class="play-btn" onclick="playVideo()">
+                                    <i class="fa fa-play-circle"></i>
+                                </div>
+                                <div class="like-btn" onclick="toggleLike()">
+                                    <i class="fas fa-thumbs-up"></i>
+                                </div>
+                                <div class="dislike-btn" onclick="toggleDislike()">
+                                    <i class="fas fa-thumbs-down"></i>
+                                </div>
+                            </div>
+        
+                            <div class="more-info">
+                                <p class="likes">87 likes</p>
+        
+                                <div class="match_duration">
+                                    <p class="match" style="color:rgb(45, 179, 45)">52% match</p>
+                                    <p class="duration">1h 34m</p>
+                                </div>
+        
+                                <p class="genre">Action Horror Mystery</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+        
+                
+        
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./Poster6.png">   
+                        <div class="card-content">
+            
+        
+                            <div class="ld-icons">
+                                <div class="play-btn" onclick="playVideo()">
+                                    <i class="fa fa-play-circle"></i>
+                                </div>
+                                <div class="like-btn" onclick="toggleLike()">
+                                    <i class="fas fa-thumbs-up"></i>
+                                </div>
+                                <div class="dislike-btn" onclick="toggleDislike()">
+                                    <i class="fas fa-thumbs-down"></i>
+                                </div>
+                            </div>
+        
+                            <div class="more-info">
+                                <p class="likes">76 likes</p>
+        
+                                <div class="match_duration">
+                                    <p class="match" style="color:rgb(45, 179, 45)">97% match</p>
+                                    <p class="duration">2h 36m</p>
+                                </div>
+        
+                                <p class="genre">Comedy  Adventure  Family</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./Poster7.png">   
+                        <div class="card-content">
+            
+        
+                            <div class="ld-icons">
+                                <div class="play-btn" onclick="playVideo()">
+                                    <i class="fa fa-play-circle"></i>
+                                </div>
+                                <div class="like-btn" onclick="toggleLike()">
+                                    <i class="fas fa-thumbs-up"></i>
+                                </div>
+                                <div class="dislike-btn" onclick="toggleDislike()">
+                                    <i class="fas fa-thumbs-down"></i>
+                                </div>
+                            </div>
+        
+                            <div class="more-info">
+                                <p class="likes">54 likes</p>
+        
+                                <div class="match_duration">
+                                    <p class="match" style="color:rgb(45, 179, 45)">77% match</p>
+                                    <p class="duration">1h 34m</p>
+                                </div>
+        
+                                <p class="genre">Sci-Fi  Adventure  Mystery</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+        
+            </div>
+
+            <div class="Popular">
+                Because you watched Lucifier
+            </div>
+
+            <div class="flex3">
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./Poster8.png">   
+                        <div class="card-content">
+            
+        
+                            <div class="ld-icons">
+                                <div class="play-btn" onclick="playVideo()">
+                                    <i class="fa fa-play-circle"></i>
+                                </div>
+                                <div class="like-btn" onclick="toggleLike()">
+                                    <i class="fas fa-thumbs-up"></i>
+                                </div>
+                                <div class="dislike-btn" onclick="toggleDislike()">
+                                    <i class="fas fa-thumbs-down"></i>
+                                </div>
+                            </div>
+        
+                            <div class="more-info">
+                                <p class="likes">87 likes</p>
+        
+                                <div class="match_duration">
+                                    <p class="match" style="color:rgb(45, 179, 45)">52% match</p>
+                                    <p class="duration">1h 34m</p>
+                                </div>
+        
+                                <p class="genre">Action Horror Mystery</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+        
+                
+        
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./Poster4.png">   
+                        <div class="card-content">
+            
+        
+                            <div class="ld-icons">
+                                <div class="play-btn" onclick="playVideo()">
+                                    <i class="fa fa-play-circle"></i>
+                                </div>
+                                <div class="like-btn" onclick="toggleLike()">
+                                    <i class="fas fa-thumbs-up"></i>
+                                </div>
+                                <div class="dislike-btn" onclick="toggleDislike()">
+                                    <i class="fas fa-thumbs-down"></i>
+                                </div>
+                            </div>
+        
+                            <div class="more-info">
+                                <p class="likes">76 likes</p>
+        
+                                <div class="match_duration">
+                                    <p class="match" style="color:rgb(45, 179, 45)">97% match</p>
+                                    <p class="duration">2h 36m</p>
+                                </div>
+        
+                                <p class="genre">Comedy  Adventure  Family</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="card-container">
+                    <div class="card">
+                        <img src="./Poster9.png">   
+                        <div class="card-content">
+            
+        
+                            <div class="ld-icons">
+                                <div class="play-btn" onclick="playVideo()">
+                                    <i class="fa fa-play-circle"></i>
+                                </div>
+                                <div class="like-btn" onclick="toggleLike()">
+                                    <i class="fas fa-thumbs-up"></i>
+                                </div>
+                                <div class="dislike-btn" onclick="toggleDislike()">
+                                    <i class="fas fa-thumbs-down"></i>
+                                </div>
+                            </div>
+        
+                            <div class="more-info">
+                                <p class="likes">54 likes</p>
+        
+                                <div class="match_duration">
+                                    <p class="match" style="color:rgb(45, 179, 45)">77% match</p>
+                                    <p class="duration">1h 34m</p>
+                                </div>
+        
+                                <p class="genre">Sci-Fi  Adventure  Mystery</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+        
+            </div>
+            
+    
+        </section>
+
+        
+
+    </body>
+
+
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Task3</title>
+    <style>
+        .video-card {
+            width: 300px;
+            border: 1px solid #ccc;
+            overflow: hidden;
+            border-radius: 8px;
+
+        }
+
+        .video-conatiner {
+            position: relative;
+        }
+        .video-container iframe{
+            width: 100% ;
+            height: auto;
+        }
+
+        .content {
+            padding: 10px;
+            position: relative;
+        }
+
+        h2 {
+            margin-top: 0px;
+            display: block;
+        }
+
+        .like-image {
+            width: 20%;
+            position: relative;
+            top: 0;
+            left: 0;
+            display: block;
+
+        }
+
+/* 
+        .like-image:hover {
+            width: 8px;
+            color: white;
+            background-color: yellowgreen;
+            transition: all 0.3s ease 0s;
+        } */
+
+        .like-image1 {
+            
+            width: 20.7%;
+            position :absolute;
+            top: 50px;
+            left: 9px;
+            display: none;                
+        }
+    
+
+    </style>
+</head>
+
+
+<body>
+    <div class="video-card">
+        <div class="video-container">
+            <!-- video link -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/jCD1JkDp_BQ?si=TW12TuNk8eVRK_9n" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="content">
+            <h2>Bosscoder Academy</h2>
+            <!-- <div class="like-dialog">I like this
+            </div> -->
+            <div class="l2"><img class="like-image1" src="icon1.png" alt="Thumbs Up Click">
+            </div>
+            <img class="like-image" src="like.png" alt="Thumbs Up">
+            </div>            
+        </div>
+    </div>
+
+    <script>
+        const img1 = document.querySelector('.like-image');
+        const img2 = document.querySelector('.like-image1');
+        let count = 0;
+        
+        img1.addEventListener('click', () =>{
+                count++;
+
+                if(count%2 != 0){
+                img2.style.display = 'block';
+                }
+                else {
+                    img2.style.display = 'none';
+                }
+        })
+       
+
+    </script>
+
+
+</body>
+</html>
